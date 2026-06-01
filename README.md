@@ -39,7 +39,7 @@
 ```hcl
 
 module "iam-role" {
-  source             = "git::https://github.com/opsstation/terraform-aws-iam-role.git?ref=v1.0.0"
+  source             = "git::https://github.com/chahalvikas2022/terraform-aws-iam-role.git"
   name               = "iam"
   environment        = "test"
   assume_role_policy = data.aws_iam_policy_document.default.json
